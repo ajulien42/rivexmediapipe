@@ -1,21 +1,6 @@
-# React + TypeScript + Vite
+# Rive + google Media Pipe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I made this small project to test interaction between Rive and Goole Media Pipe
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
-
-## Deploy Your Own
-
-Deploy your own Vite project with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
-
-_Live Example: https://vite-react-example.vercel.app_
-
-### Deploying From Your Terminal
-
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
-
-```shell
-$ vercel
-```
+Here is the link for the vercel app : <https://rivexmediapipe.vercel.app/>  
+Here is the link for the presentation video (I recorded it with loom, but it's a public link): <https://www.loom.com/share/0492fc7d68714621a355cde282b1317b>
