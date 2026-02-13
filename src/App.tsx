@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import CursorTracking from "./CursorTracking";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [showTracking, setShowTracking] = useState(true);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div
+        className={`${showTracking ? "bg-purple-900" : "bg-cyan-900"} flex h-screen w-full flex-col items-center`}
+      >
+        <div className="flex flex-col container h-full">
+          <div className="flex flex-row justify-center">
+            <button
+              className={`border rounded text-base font-medium border-white px-4 py-2 m-4 text-white cursor-pointer transition-colors duration-200 hover:bg-white ${showTracking ? "hover:text-purple-900" : "hover:text-cyan-900"}`}
+              onClick={() => setShowTracking(!showTracking)}
+            >
+              Switch tracking method
+            </button>
+          </div>
+          {showTracking ? <CursorTracking /> : <></>}
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
