@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CursorTracking from "./CursorTracking";
+import FaceTracking from "./FaceTracking";
 
 function App() {
   const [showTracking, setShowTracking] = useState(true);
@@ -18,7 +19,7 @@ function App() {
               Switch tracking method
             </button>
           </div>
-          {showTracking ? <CursorTracking /> : <></>}
+          {showTracking ? <CursorTracking /> : <FaceTracking />}
         </div>
       </div>
     </>
